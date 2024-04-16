@@ -14,7 +14,7 @@ jobs:
 
     - name: Build Docker image and generate PDF
       run: |
-        make docker
+        make docker_actions
 
     - name: Commit PDF
       run: |
