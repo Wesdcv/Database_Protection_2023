@@ -1,5 +1,10 @@
 name: Build LaTeX document
-on: [push]
+on:
+  push:
+    branches: master
+    paths:
+      - '**/*.tex'
+      - './*.tex'
 
 jobs:
   build:
@@ -21,8 +26,8 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: ./db.pdf
-          tag_name: release-pdf-testing
-          name: Release for PDF Testing
+          tag_name: release-pdf
+          name: Built PDF 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
