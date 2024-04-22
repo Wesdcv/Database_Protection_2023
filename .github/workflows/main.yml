@@ -1,12 +1,5 @@
 name: Build LaTeX document
-on:
-  push:
-    branches: 
-      -  release-pdf-testing
-    paths:
-      - '**/*.tex'
-      - './*.tex'
-      - './.github/workflows/main.yml'
+on: [push]
 
 jobs:
   build:
