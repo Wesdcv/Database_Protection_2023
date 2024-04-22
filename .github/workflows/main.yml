@@ -1,7 +1,8 @@
 name: Build LaTeX document
 on:
   push:
-    branches: master
+    branches: 
+      -  release-pdf-testing
     paths:
       - '**/*.tex'
       - './*.tex'
