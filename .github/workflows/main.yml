@@ -6,6 +6,7 @@ on:
     paths:
       - '**/*.tex'
       - './*.tex'
+      - './.github/workflows/main.yml'
 
 jobs:
   build:
